@@ -10,6 +10,6 @@ ADD Hitos/Hitos.py Hitos
 RUN rm requirements.txt
 EXPOSE 80
 
-CMD ['hug', '-p', '80', '-f', 'main.py'] 
+CMD [ "hug", "-p 80", "-f", "main.py" ] 
 
 
