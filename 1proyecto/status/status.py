@@ -3,7 +3,7 @@
 import requests
 import sys
 
-host = '172.17.0.3:8000'
+host = 'localhost:8000'
 
 if len(sys.argv) > 1:
     hito = sys.argv[1]
