@@ -7,6 +7,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN rm requirements.txt
 
-ENTRYPOINT ./status.py
+ENTRYPOINT ["./status.py"]
 
 

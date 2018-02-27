@@ -13,6 +13,6 @@ else:
 if hito == None:
     r=requests.get('http://'+host+'/status')
 else:
-    r=requests.get('http://'+host+'/hito/'+hito)
+    r=requests.get('http://'+host+'/one/'+hito)
 
 print(r.status_code, "\n", r.text)
