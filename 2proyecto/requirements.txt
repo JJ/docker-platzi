@@ -1,0 +1,6 @@
+Flask
+pytest
+gunicorn
+json-logging-py
+python3-logstash
+
