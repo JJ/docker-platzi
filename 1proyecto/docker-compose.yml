@@ -1,13 +1,16 @@
-version: '2'
+version: '3'
 
 services:
   data:
-    build: data
-    tty: true
+    image: jjmerelo/platzidata
+    volumes:
+      - data-vol:/data
   web:
-    build: .
+    image: jjmerelo/platziws0
     ports:
       - "8000:80"
-    volumes_from:
-      - data:ro
-  
+    volumes:
+      - data-vol:/data
+      
+volumes:
+  data-vol: 
